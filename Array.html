@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      var names = new Array(5);
+      names[0] = "Sohan";
+      names[1] = "mamun";
+      names[2] = "shamim";
+      names[3] = "hridoy";
+      names[4] = "emon";
+      console.log(names[2]);
+      console.log(names[0]);
+      console.log(names);
+
+      var names = ["sohan", "Shamim", "Mamun", "Hridoy", "Emon"];
+      console.log(names[0]);
+      console.log(names.length);
+      names.push("Miftahul Islam");
+      console.log(names[5]);
+      console.log(names.length);
+      names.pop();
+      console.log(names);
+
+
+      
+      var country1 = ["Bangladesh", "India", "Pakistan"];
+      var country2 = ["Nepal", "Irak", "Iran"];
+      var country = country1.concat(country2);
+      console.log(country);
+
+
+
+      // Loop In Array.......
+      var number = [10, 20, 30, 40, 50];
+      var sum = 0;
+      for (var i = 0; i < 5; i++) {
+      console.log(number[i]);
+      sum = sum + number[i];
+      }
+      console.log("Suum = " + sum);
+
+
+
+      var num = new Array();
+      for (var i = 0; i < 5; i++) {
+        num[i] = parseInt(prompt("Enter some Number : "));
+      }
+      for (var i = 0; i < 5; i++) {
+        console.log(num[i]);
+        sum = sum + num[i];
+      }
+      console.log("Suum = " + sum);
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=dd, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // // synchronous Programing....
+        // const taskOne = () => {
+        //     console.log("Task 1");
+        // };
+
+        // const dataLoading = ()=>{
+        //     console.log("Task.Data Loading...")
+        // }
+
+        // const taskTwo = () => {
+        //     setTimeout(dataLoading, 2000);
+        // };
+
+        // const taskThree = () => {
+        //     console.log("Task 3");
+        // };
+
+        // const taskFour = () => {
+        //     console.log("Task 4");
+        // };
+
+        // const taskFive = () => {
+        //     console.log("Task 5");
+        // };
+
+        // taskOne();
+        // taskTwo();
+        // taskThree();
+        // taskFour();
+        // taskFive();
+
+
+
+        // Callback.....and Higer Order Function....
+        function square(x) {
+            console.log(`square of ${x} : ${x * x}`);
+        }
+        square(5);
+
+        // const y = square
+        // y(5)
+
+        function higherOrderFunction (num , callback){
+            callback(num)
+        }
+        higherOrderFunction(6,square);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

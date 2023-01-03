@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <Script>
+
+        // function deleteSomething() {
+        //     let value = confirm("Do You went To Delete ? ");
+        //     if (value) {
+        //         console.log("Deleted")
+        //     } else {
+        //         console.log("Not Deleted")
+        //     }
+        // }
+        // deleteSomething();
+
+
+        function welcomeMassage() {
+            var h1 = document.createElement("h1");
+            let text;
+
+            var name = prompt("Enter Your Name : ");
+            if (name == null || name == "") {
+                text = "No Name Found";
+
+            }else {
+                text = "Welcome   " + name;
+            }
+            var textNode = document.createTextNode(text);
+            h1.appendChild(textNode);
+            document.body.appendChild(h1);
+        }
+        welcomeMassage();
+
+
+    </Script>
+</body>
+
+</html>

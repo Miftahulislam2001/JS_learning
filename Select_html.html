@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="heading1">This Is Heading Tag </h1>
+    <h1 id="heading2">This Is Heading 2 </h1>
+
+    <p id="pid">This ia a paragraph</p>
+    <p class="pid">This ia a paragraph</p>
+
+
+
+    <a href="#">Home</a>
+    <ul>
+        <li><a href="#">Tutorial</a></li>
+        <li>Bangladesh</li>
+    </ul>
+
+    <div class="my-div">
+        <a href="#">Contact</a>
+    </div>
+
+
+
+    <script>
+
+        // Get ElimentById .....
+
+        // var myHeading = document.getElementById("heading1")
+        // myHeading.innerHTML = "Hello";
+
+        // var myHeading2 = document.getElementById("heading2")
+        // myHeading2.innerHTML = "Good Bye ";
+
+
+        // Query Selector.....
+
+        document.querySelector("#pid").innerHTML = " This is Changed .";
+        document.querySelector(".pid").innerHTML = " This is Changed .";
+
+
+        document.querySelector(" .my-div a").innerHTML = " New Text";
+
+
+
+
+
+    </script>
+</body>
+
+</html>

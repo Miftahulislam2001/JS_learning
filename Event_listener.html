@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .my_style {
+            color: tomato;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>I Love MY Country</h1> -->
+
+    <h2>You Have Not Clicked Any Button</h2>
+    <button class="myButton">Button 1 </button>
+    <button class="myButton">Button 2 </button>
+    <button class="myButton">Button 3 </button>
+
+    <script>
+        // var myVar = document.querySelector("h1");
+        // myVar.addEventListener("mouseover", function () {
+        //     myVar.classList.add("my_style");
+        // });
+
+
+        // var myVar = document.querySelector("h1");
+        // myVar.addEventListener("mouseout", function () {
+        //     myVar.classList.remove("my_style");
+        // });
+
+
+            var len = document.querySelectorAll(".myButton").length;
+        for(var i=0;i<len;i++){
+            document.querySelectorAll(".myButton")[i].addEventListener("click", function(){
+            var text = this.innerHTML;
+            document.querySelector("h2").innerHTML=text + "is clicked";
+        });
+
+        }
+
+
+
+
+
+        /*
+        document.querySelectorAll(".myButton")[1].addEventListener("click", function(){
+            var text = this.innerHTML;
+            document.querySelector("h2").innerHTML=text + "is clicked";
+        });
+
+        document.querySelectorAll(".myButton")[2].addEventListener("click", function(){
+            var text = this.innerHTML;
+            document.querySelector("h2").innerHTML=text + "is clicked";
+        });
+*/
+
+    </script>
+</body>
+
+</html>

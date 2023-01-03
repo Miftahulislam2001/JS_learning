@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para-style {
+            color: brown;
+            font-size: 2rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p id="paraId">This is paragraph tag for js practice.</p>
+    <button onclick="addStyle()">Add Style </button>
+    <button onclick="removeStyle()"> Remove style </button>
+
+
+    <script>
+
+        function addStyle() {
+            var myVar = document.querySelector("#paraId");
+            myVar.classList.add("para-style");
+
+
+
+
+            //   myVar.style.color="green";
+            //   myVar.style.fontSize="2rem";
+            //   myVar.style.fontStyle="italic";
+            //   myVar.style.fontWeight="bold";
+
+
+        }
+
+        function removeStyle() {
+            var myVar = document.querySelector("#paraId");
+            myVar.classList.remove("para-style");
+        }
+
+    </script>
+</body>
+
+</html>
